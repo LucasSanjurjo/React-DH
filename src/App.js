@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Sidebar from "./assets/components/Sidebar";
+import Topbar from "./assets/components/Topbar";
+import Footer from "./assets/components/Footer";
+import LastMovieInDb from "./assets/components/LastMovieInDb";
+import GenresInDb from "./assets/components/GenresInDb";
+import ContentRowMovies from "./assets/components/ContentRowMovies";
+import ContentRowTop from "./assets/components/ContentRowTop";
+import ContentWrapper from "./assets/components/ContentWrapper";
+import "./assets/css/app.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="wrapper">
+      <Sidebar />
+      <Topbar />
+      <Footer />
+      <LastMovieInDb/>
+      <GenresInDb />
+      <ContentRowMovies />
+      <ContentRowTop />
+      <ContentWrapper />
     </div>
   );
 }
