@@ -2,7 +2,7 @@ import Mandalorian from "../images/mandalorian.jpg";
 
 function LastMovieInDb() {
   return (
-    <div class="row">
+      <div className="row">
       <div className="col-lg-6 mb-4">
         <div className="card shadow mb-4">
           <div className="card-header py-3">
@@ -14,7 +14,7 @@ function LastMovieInDb() {
             <div class="text-center">
               <img
                 class="img-fluid px-3 px-sm-4 mt-3 mb-4"
-                style="width: 40rem;"
+                style={{width: "40rem;"}}
                 src={Mandalorian}
                 alt=" Star Wars - Mandalorian "
               />
@@ -33,7 +33,7 @@ function LastMovieInDb() {
           </div>
         </div>
       </div>
-    </div>
+      </div>
   );
 }
 
