@@ -1,9 +1,6 @@
 import ContentRowTop from "./ContentRowTop";
 import Footer from "./Footer";
 import Topbar from "./Topbar";
-import ContentRowMovies from "./ContentRowMovies";
-import GenresInDb from "./GenresInDb";
-import LastMovieInDb from "./LastMovieInDb";
 
 function ContentWrapper() {
   return (
@@ -11,8 +8,6 @@ function ContentWrapper() {
       <div id="content">
         <Topbar />
         <ContentRowTop />
-        <GenresInDb />
-        <LastMovieInDb />
         <Footer />
       </div>
     </div>

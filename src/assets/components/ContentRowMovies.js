@@ -5,21 +5,21 @@ function ContentRowMovies() {
     titulo: "Movies in Data Base",
     color: "primary",
     cifra: 21,
-    icono: "fa-clipboard-list",
+    icono: "clipboard-list",
   };
 
   let totalAwards = {
     titulo: " Total awards",
     color: "success",
     cifra: "79",
-    icono: "fa-award",
+    icono: "award",
   };
 
   let actorsQuantity = {
     titulo: "Actors quantity",
     color: "warning",
     cifra: "49",
-    icono: "fa-user-check",
+    icono: "user-check",
   };
 
   let cardProps = [moviesInDB, totalAwards, actorsQuantity];

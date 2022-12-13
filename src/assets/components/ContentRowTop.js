@@ -1,4 +1,6 @@
 import ContentRowMovies from "./ContentRowMovies";
+import LastMovieInDb from "./LastMovieInDb";
+import GenresInDb from "./GenresInDb";
 
 function ContentRowTop() {
   return (
@@ -7,8 +9,11 @@ function ContentRowTop() {
         <h1 className="h3 mb-0 text-gray-800">App Dashboard</h1>
       </div>
 
-        <ContentRowMovies/>
-        
+      <ContentRowMovies />
+
+      <LastMovieInDb />
+
+      <GenresInDb />
     </div>
   );
 }
