@@ -1,12 +1,15 @@
+import React from "react";
+import PropTypes  from "prop-types";
+
 function Card(props) {
   return (
     <div className="col-md-4 mb-4">
-      <div className={`card border-left-${props.color}  shadow h-100 py-2"`}>
+      <div className={`card border-left-${props.color}  shadow h-100 py-2`}>
         <div className="card-body">
           <div className="row no-gutters align-items-center">
             <div className="col mr-2">
               <div
-                className={`"text-xs font-weight-bold text-${props.color} text-uppercase mb-1"`}
+                className={`text-xs font-weight-bold text-${props.color} text-uppercase mb-1`}
               >
                 {props.titulo}
               </div>
@@ -22,13 +25,20 @@ function Card(props) {
       </div>
     </div>
   );
-};
+}
 
 Card.defaultProps = {
   titulo: "Hola",
   color: "danger",
   cifra: "10",
   icono: "user-check",
+};
+
+Card.propTypes = {
+  titulo: PropTypes.string.isRequired,
+  color: PropTypes.oneOf(["primary","success","warning","danger"]).isRequired,
+  cifra: PropTypes.oneOfType([PropTypes.string,PropTypes.number]).isRequired,
+  icono: PropTypes.string
 };
 
 export default Card;
