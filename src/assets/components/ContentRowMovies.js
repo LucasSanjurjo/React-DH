@@ -22,14 +22,8 @@ function ContentRowMovies() {
     icono: "user-check",
   };
 
-  let loQueSea = {
-    titulo: "S" ,
-    color: "danger",
-    cifra: "true",
-    icono: "user-check",
-  };
 
-  let cardProps = [moviesInDB, totalAwards, actorsQuantity, loQueSea];
+  let cardProps = [moviesInDB, totalAwards, actorsQuantity];
 
   return (
     <div className="row">
