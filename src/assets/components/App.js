@@ -8,8 +8,6 @@ function App() {
     <React.Fragment>
       <div id="wrapper">
         <Sidebar />
-        <ContentWrapper />
-
       </div>
     </React.Fragment>
   );
